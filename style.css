@@ -38,6 +38,7 @@ p {
     border-top-right-radius: 40px; 
     box-sizing: border-box; 
     padding: 15px;
+    border-bottom: 5px solid #689cf2; 
 }
 
 .left-header-logo {
@@ -52,7 +53,7 @@ p {
 .main-nav {
    width: 1200px;
 background-color: #b5ad9f; 
-    height: 60px; 
+    height: 75px; 
     margin-top: -3px; 
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; 
@@ -88,7 +89,8 @@ ul a {
 /* DEAL PAGE */
 
 .deal-page {
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    width: 1200px; 
 }
 
 .top-deal-page {
@@ -99,7 +101,6 @@ ul a {
 
 .top-deal-page-photo {
     float: left; 
-    height: 255px;
     border-bottom-right-radius: 30px; 
     box-sizing: border-box;
    
@@ -122,6 +123,7 @@ ul a {
     background-color: #f7f2e8; 
     height: 100px; 
     box-sizing: border-box; 
+   
 
 }
 
@@ -132,6 +134,7 @@ ul a {
     padding-top: 15px;
     height: 100px; 
     padding-right: 80px;
+     
     
     
 }
@@ -139,7 +142,8 @@ ul a {
     background-color: #f7f2e8;
     box-sizing: border-box; 
     padding: 15px;
-    height: 100px; 
+    height: 100px;
+     
     
 }
 
@@ -155,15 +159,36 @@ ul a {
     box-sizing: border-box; 
     width: 1200px; 
     height: 700px;
+    display: flex; 
 }
+    
+.column {
+    flex: 1; 
     
 }
 
-.content-column {
-    display: inline-block
-    width: 300px; 
+.column-right {
+    float: right; 
+    width: 33%; 
+}
+
+.column-center {
+    display: inline-block;
+    width: 33%; 
+}
+
+.column-left {
+    float: left; 
+    width: 33%; 
+}
+
+.column p {
+    text-align: left; 
+    margin-right: 10px
 }
 /*FOOTER*/
 footer {
-    background-color: #b5ad9f; 
+    background-color: #b5ad9f;
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius:  25px; 
 }
