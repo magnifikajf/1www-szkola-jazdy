@@ -1,5 +1,13 @@
 /* MAIN STYLES */
 
+html {
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
 body {
     max-width: 1200px; 
     margin: 20px auto;
@@ -21,24 +29,21 @@ p {
 
 /* HEADER */
 .main-header {
-    margin top: 10px;
+    margin-top: 10px;
     position: relative;
     height: 70px; 
     box-sizing: border-box; 
-    border-bottom: 5px solid #689cf2; 
-    
+    border-bottom: 5px solid #689cf2;   
 }
 
 .right-header-text {
-    background-color: #f7f2e8;
+    background-color: #edeae1;
     margin-left: 530px;
     width: 670px;
-    height:inherit;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px; 
+    height: 65px;
+    border-radius: 40px 40px 0px 0px;
     box-sizing: border-box; 
     padding: 15px;
-    border-bottom: 5px solid #689cf2; 
 }
 
 .left-header-logo {
@@ -52,23 +57,15 @@ p {
 
 .main-nav {
    width: 1200px;
-background-color: #b5ad9f; 
+background-color: #b3aaa1;
     height: 75px; 
     margin-top: -3px; 
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px; 
+    border-radius: 0px 0px 30px 30px;  
     border-top: 5px solid #689cf2;
-    padding: 
     box-sizing: border-box; 
-}
-
-.nav-pages {
-    box-sizing: border-box; 
-    
 }
 
 ul {
-    
     list-style-type: none;
 }
  
@@ -81,114 +78,88 @@ ul> li {
 ul a {
     text-transform: uppercase; 
     text-decoration: none; 
-    color:aliceblue; 
-    text-shadow: 3px 3px 2px #5b5956;
-    
+    color: white; 
+    text-shadow: 1px 3px 1px #646568;
+    font-weight: 900; 
 }
 
 /* DEAL PAGE */
 
 .deal-page {
-    box-sizing: border-box;
-    width: 1200px; 
-}
-
-.top-deal-page {
-    box-sizing: border-box; 
-    width: 1200px; 
-    
+    width: 1200px;
+    background-color: #edeae1;  
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
 }
 
 .top-deal-page-photo {
     float: left; 
-    border-bottom-right-radius: 30px; 
-    box-sizing: border-box;
-   
-    
+    height: 250px; 
 }
 
 .left-deal-page-text {
-    background-color: #f7f2e8;
-    width: 670px;   
-    float: left; 
-    background-color: #f7f2e8;
-    box-sizing: border-box; 
+    width: 640px;   
+    float: left;
     padding: 15px;
-    height: 255px;
-    
+    padding-right: 20px
 }
 
 .bottom-deal-page {
     clear: both; 
-    background-color: #f7f2e8; 
+    background-color: #edeae1; 
     height: 100px; 
-    box-sizing: border-box; 
-   
-
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
 }
 
 .right-car-text {
-     background-color: #f7f2e8;
-    box-sizing: border-box; 
     float: left; 
     padding-top: 15px;
-    height: 100px; 
-    padding-right: 80px;
-     
-    
-    
+    padding-right: 130px;
+    padding-left: 20px;
+    border-top-left-radius: 30px; 
 }
 .car-images {
-    background-color: #f7f2e8;
-    box-sizing: border-box; 
-    padding: 15px;
-    height: 100px;
-     
-    
+    padding: 20px;
 }
 
 .car {
     clear: both; 
-    padding-top: 15px; 
-    padding-right: 35px; 
-    
+    padding-right: 40px; 
 }
     
 /* CONTENT PAGE */
-. content-page {
-    box-sizing: border-box; 
+.content-page {
     width: 1200px; 
-    height: 700px;
-    display: flex; 
+    height: 200px; 
+    padding-top: 30px;
+    padding-left: 20px; 
 }
-    
+
 .column {
-    flex: 1; 
-    
-}
-
-.column-right {
-    float: right; 
-    width: 33%; 
-}
-
-.column-center {
-    display: inline-block;
-    width: 33%; 
-}
-
-.column-left {
-    float: left; 
-    width: 33%; 
+    width: 33%;
+    display: inline-block; 
 }
 
 .column p {
     text-align: left; 
-    margin-right: 10px
+    margin-right: 20px
 }
-/*FOOTER*/
+
 footer {
-    background-color: #b5ad9f;
+    background-color: #b3aaa1;
+    color: aliceblue; 
     border-bottom-left-radius: 25px; 
     border-bottom-right-radius:  25px; 
+    padding: 2px; 
+    font-size: 11px; 
+    
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    line-height: 0.75; 
 }
